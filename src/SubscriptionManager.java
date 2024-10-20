@@ -10,7 +10,7 @@ public class SubscriptionManager {
     private final Path outputFilePath;
 
     public SubscriptionManager(Path inputFilePath, Path outputFilePath) {
-        this.members = new ArrayList<>();
+        this.members = new ArrayList<>(); // för att lagra medlemmarna som läses in från indata
         this.outputFilePath = outputFilePath;
         readMembers(inputFilePath);
     }

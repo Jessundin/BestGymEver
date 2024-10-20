@@ -27,6 +27,7 @@ public class Member {
 
     @Override
     public String toString() {
-        return name + " " + socialSecurityNumber + " " + subscriptionDate;
+        LocalDate today = LocalDate.now();
+        return name + " " + socialSecurityNumber + " " + today;
     }
 }
